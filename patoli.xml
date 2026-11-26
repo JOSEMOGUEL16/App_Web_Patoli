@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aplicacion nombre="Patoli">
+  <descripcion>Gestión y seguimiento del servicio social.</descripcion>
+  <modulos>
+    <modulo nombre="Inicio">
+      <seccion>Presentación de Patoli</seccion>
+      <seccion>Agenda de actividades</seccion>
+    </modulo>
+    <modulo nombre="Acceso">
+      <funcion>Crear cuenta</funcion>
+      <funcion>Iniciar sesión</funcion>
+      <funcion>Cerrar sesión</funcion>
+    </modulo>
+    <modulo nombre="Estudiante">
+      <seccion nombre="Perfil">
+        <dato>Nombre</dato>
+        <dato>Correo electrónico</dato>
+        <dato>Universidad</dato>
+        <dato>Carrera</dato>
+        <dato>Matrícula</dato>
+      </seccion>
+      <seccion nombre="Registro de horas">
+        <campo>Fecha</campo>
+        <campo>Actividad realizada</campo>
+        <campo>Horas dedicadas</campo>
+        <accion>Enviar a revisión</accion>
+      </seccion>
+      <seccion nombre="Historial">
+        <estado>Pendiente</estado>
+        <estado>Aprobada</estado>
+        <estado>Rechazada</estado>
+        <estado>Cancelada</estado>
+        <accion>Consultar observaciones</accion>
+        <accion>Corregir y reenviar jornadas rechazadas</accion>
+      </seccion>
+      <seccion nombre="Mi avance">
+        <indicador>Meta de horas</indicador>
+        <indicador>Horas aprobadas</indicador>
+        <indicador>Horas pendientes</indicador>
+        <indicador>Horas rechazadas</indicador>
+        <indicador>Horas restantes</indicador>
+        <indicador>Porcentaje completado</indicador>
+        <componente>Barra de progreso</componente>
+      </seccion>
+    </modulo>
+    <modulo nombre="Coordinación">
+      <funcion>Revisar jornadas</funcion>
+      <funcion>Aprobar horas</funcion>
+      <funcion>Rechazar jornadas</funcion>
+      <funcion>Registrar observaciones</funcion>
+    </modulo>
+  </modulos>
+  <informacion>
+    <entidad>Usuarios</entidad>
+    <entidad>Sesiones</entidad>
+    <entidad>Jornadas</entidad>
+    <entidad>Eventos</entidad>
+    <entidad>Auditoría</entidad>
+  </informacion>
+  <reglas>
+    <regla>Las jornadas nuevas quedan pendientes de revisión.</regla>
+    <regla>Las horas aprobadas se suman al avance del estudiante.</regla>
+    <regla>Las jornadas rechazadas pueden corregirse y reenviarse.</regla>
+  </reglas>
+</aplicacion>
