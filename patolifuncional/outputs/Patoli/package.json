@@ -1,0 +1,13 @@
+{
+  "name": "patoli-servicio-social",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Patoli: usuarios, jornadas y aprobación de horas de servicio social.",
+  "engines": { "node": ">=24.0.0" },
+  "scripts": {
+    "start": "node server.mjs --open",
+    "test": "node --test test/*.test.mjs",
+    "backup": "node scripts/respaldo.mjs"
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Inicio | Patoli</title><meta name="theme-color" content="#007f75"><link rel="icon" href="images/patoli.png"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="app.css"></head><body ><a class="skip-link" href="#main">Saltar al contenido</a>
+<header class="header-app"><div class="header-contenido"><a class="marca" href="home.html" aria-label="Patoli, ir al inicio"><img src="images/patoli.png" alt="Patoli" class="logo" width="90" height="64"></a><nav aria-label="Navegación principal"><a href="home.html">Inicio</a><a href="login.html">Iniciar sesión</a><a href="registro.html">Crear cuenta</a></nav></div></header>
+<p id="page-message" class="message page-message" role="status" aria-live="polite"></p><main id="main" class="home"><p id="welcome-note" class="notice" hidden></p>
+  <section class="intro">
+    <p class="eyebrow">SERVICIO SOCIAL</p>
+    <h1>Tu tiempo.<br>Un cambio real.</h1>
+    <div class="intro-footer">
+      <p>Un espacio para colaborar, aprender y contribuir a nuestra comunidad.</p>
+      <div class="actions"><a id="account-link" class="button" href="registro.html">Comenzar mi servicio ↗</a><a class="enlace" href="#agenda">Ver agenda ↗</a></div>
+    </div>
+  </section>
+
+  <figure class="foto-principal">
+    <div class="marco-foto">
+    <img src="images/pat_camp.webp" alt="Voluntarios colaborando en actividades de la comunidad">
+  </div>
+  <figcaption>Personas que hacen la diferencia, todos los días.</figcaption>
+  </figure>
+
+  <section class="agenda" id="agenda" aria-labelledby="titulo-agenda">
+    <div class="encabezado-seccion">
+      <p class="eyebrow">01 / ENCUENTROS</p>
+      <h2 id="titulo-agenda">Lo que viene.</h2>
+    </div>
+
+    <div id="events" class="lista-eventos"><p class="empty-state">Cargando actividades…</p></div>
+  </section>
+
+  <section class="comunidad" aria-labelledby="titulo-comunidad">
+    <div class="comunidad-texto">
+      <p class="eyebrow">02 / NUESTRO ESPACIO</p>
+      <h2 id="titulo-comunidad">Aquí empieza<br>tu contribución.</h2>
+      <p>Cada actividad es una oportunidad para conectar con otras personas y aportar algo valioso.</p>
+    </div>
+    <figure>
+    <div class="marco-foto">
+      <img src="images/IMG_1520.webp" alt="Espacios del centro de servicio social" loading="lazy">
+    </div>
+    <figcaption>Un lugar para encontrarnos y crecer.</figcaption>
+    </figure>
+  </section>
+
+  <section class="avisos" aria-labelledby="titulo-avisos">
+    <div class="encabezado-seccion">
+      <p class="eyebrow">03 / AL DÍA</p>
+      <h2 id="titulo-avisos">Para tener presente.</h2>
+    </div>
+
+    <div class="lista-avisos">
+      <article class="aviso">
+        <p class="aviso-categoria">REGISTRO</p>
+        <h3>Cada hora cuenta.</h3>
+        <p>Envía tus horas al terminar cada jornada. La coordinación las revisará y las aprobadas se sumarán a tu avance.</p>
+        <a class="enlace" href="status.html">Consultar mi avance <span aria-hidden="true">↗</span></a>
+      </article>
+
+      <article class="aviso">
+        <p class="aviso-categoria">COMUNIDAD</p>
+        <h3>Encuentra tu próxima actividad.</h3>
+        <p>Acércate a la coordinación para conocer las oportunidades de participación disponibles.</p>
+      </article>
+    </div>
+  </section>
+</main>
+  <footer class="footer"><span>Patoli · Servicio social</span><span>Tu tiempo. Un cambio real.</span></footer><noscript><p class="notice">Activa JavaScript en tu navegador para usar tu cuenta y registrar horas.</p></noscript><script type="module" src="home.js"></script></body></html>

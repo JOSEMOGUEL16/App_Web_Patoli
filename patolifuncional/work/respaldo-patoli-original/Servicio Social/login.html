@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iniciar sesión | Servicio Social</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav aria-label="Navegación principal">
+      <a href="home.html">Inicio</a>
+      <a href="status.html">Status</a>
+      <a href="perfil.html">Perfil</a>
+    </nav>
+  </header>
+
+  <main class="login">
+    <section class="login-presentacion">
+      <p class="eyebrow">SERVICIO SOCIAL</p>
+      <h1>Patoli</h1>
+    </section>
+
+    <section class="login-acceso" aria-labelledby="titulo-login">
+      <p class="eyebrow">BIENVENIDO DE NUEVO</p>
+      <h2 id="titulo-login">Iniciar sesión.</h2>
+      <p class="login-descripcion">Ingresa los datos de tu cuenta.</p>
+
+      <form id="form-login" class="login-form">
+        <div class="login-campo">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" placeholder="nombre@universidad.edu" autocomplete="username" required>
+        </div>
+
+        <div class="login-campo">
+          <label for="contrasena">Contraseña</label>
+          <input type="password" id="contrasena" name="contrasena" placeholder="Tu contraseña" autocomplete="current-password" required>
+        </div>
+
+        <button class="login-boton" type="submit">
+          Iniciar sesión
+          <span aria-hidden="true">↗</span>
+        </button>
+
+        <p id="login-mensaje" class="login-mensaje" role="status"></p>
+      </form>
+
+      <p class="login-ayuda">Si necesitas una cuenta o recuperar tu acceso, comunícate con la coordinación.</p>
+    </section>
+  </main>
+
+  <script src="login.js"></script>
+</body>
+</html>

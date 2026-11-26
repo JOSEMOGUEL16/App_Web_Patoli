@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Status | Servicio Social</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav aria-label="Navegación principal">
+      <a href="home.html">Inicio</a>
+      <a href="status.html" aria-current="page">Status</a>
+      <a href="perfil.html">Perfil</a>
+    </nav>
+  </header>
+
+  <main class="status">
+    <section class="status-intro">
+
+      <h1>Tu avance.</h1>
+    </section>
+
+    <section class="alumno" aria-labelledby="nombre-alumno">
+      <div>
+        <p class="eyebrow">ALUMNO</p>
+        <h2 id="nombre-alumno">José Moguel</h2>
+      </div>
+      <div>
+        <p class="eyebrow">UNIVERSIDAD</p>
+        <p class="alumno-universidad">BUAP</p>
+      </div>
+    </section>
+
+    <section class="horas" aria-labelledby="titulo-horas">
+      <div class="horas-encabezado">
+        <h2 id="titulo-horas">Horas completadas</h2>
+        <span class="estado-servicio">En curso</span>
+      </div>
+
+      <div class="horas-total">
+        <span class="horas-numero">215</span>
+        <span class="horas-meta">/ 480 horas</span>
+      </div>
+
+      <progress class="barra-horas" value="120" max="480" aria-label="Horas completadas">25%</progress>
+
+      <div class="progreso-detalle">
+        <p>45% completado</p>
+        <p>Te faltan <strong>265 horas</strong></p>
+      </div>
+    </section>
+
+    <section class="historial" aria-labelledby="titulo-historial">
+      <div class="encabezado-seccion">
+        <p class="eyebrow">ACTIVIDAD</p>
+        <h2 id="titulo-historial">Últimos registros.</h2>
+      </div>
+
+      <div class="tabla-contenedor">
+        <table class="tabla-horas">
+          <caption>Últimas jornadas registradas de servicio social</caption>
+          <thead>
+            <tr>
+              <th scope="col">Fecha</th>
+              <th scope="col">Actividad</th>
+              <th scope="col">Horas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><time datetime="2026-11-09">09 nov 2026</time></td>
+              <td>Apoyo en taller comunitario</td>
+              <td>4 h</td>
+            </tr>
+            <tr>
+              <td><time datetime="2026-11-06">06 nov 2026</time></td>
+              <td>Organización de materiales</td>
+              <td>3 h</td>
+            </tr>
+            <tr>
+              <td><time datetime="2026-11-05">05 nov 2026</time></td>
+              <td>Apoyo en actividades del centro</td>
+              <td>5 h</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
